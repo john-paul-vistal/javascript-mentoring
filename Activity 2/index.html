@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS BASIC</title>
+    <style type="text/css">
+        input {
+            padding: 5px;
+            width: 200px
+        }
+        
+        button {
+            padding: 5px;
+        }
+        
+        .inputgroup {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Question 1  : Display Movies --->
+    <h2> Movies : </h2>
+    <ul id="moviesList"></ul>
+
+    <!-- Question 2 : Delete Movie --->
+    <h2> Delete a movie by name: </h2>
+    <input id="tfName">
+    <button id="remove" style="background-color: red" onclick="deletemovie()">Remove</button>
+
+    <!-- Question 3 : Add Movie -->
+    <h2> Add a movie : </h2>
+
+    <div class="inputgroup">
+        <label>Title: </label><input id="tfTitle" type="text" class="info">
+    </div>
+    <div class="inputgroup">
+        <label>Genre: </label><input id="tfGenre" type="text" class="info">
+    </div>
+    <div class="inputgroup">
+        <label>Director: </label><input id="tfDirector" type="text" class="info">
+    </div>
+    <div class="inputgroup">
+        <label>Release Date: </label><input id="tfReleasedate" type="text" class="info">
+    </div>
+    <div class="inputgroup">
+        <label>Running Time: </label><input id="tfRunTime" type="text" class="info">
+    </div>
+    <button style="padding-left:20px;padding-right:20px;background-color: lightskyblue" onclick="addmovie()">Add</button>
+
+
+    <!-- Question 4 : Search Movie detail -->
+    <h2> Search movie detail : </h2>
+    <input type="text" id="tfSearch">
+    <button style="background-color: lightskyblue" onclick="showDetails()">Details</button>
+
+    <!-- Question 5 : Filter -->
+    <h2> Filter movie by genre : </h2>
+    <input type="text" id="tfFilteredSearch">
+    <button style="background-color: lightskyblue" onclick="filteredSearch()">Filter</button>
+    <ul id="filteredList"></ul>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
